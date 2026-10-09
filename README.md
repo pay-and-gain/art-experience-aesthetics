@@ -106,6 +106,11 @@
 
 本仓库为**公开仓库**，访客（无需登录 GitHub）即可下载，没有会员或付费门槛。但 Git LFS 文件有两点需注意：
 
+- **Release 一键下载（最推荐访客）**：仓库的 Releases 页（标签 `v1.0`）提供真实文件的直链附件，无需 git、不受 LFS 指针陷阱影响，可逐个下载：
+  - `original-scan.pdf` —— 原版扫描件（约 138 MB）
+  - `flow.pdf` —— 流式版 PDF
+  - `flow.docx` —— 流式版 Word（可编辑）
+  - 直链：<https://github.com/pay-and-gain/art-experience-aesthetics/releases/tag/v1.0>
 - **单文件下载（推荐）**：点击任意文件进入文件页，按右上角「Download / 下载」按钮，或用文件页的 Raw 链接，即可直接拿到真实文件。原版扫描件（138 MB）与流式版 PDF（2.49 MB）均经 Git LFS 托管，浏览器会自动重定向到 LFS 存储并下载真实字节。
 - **整仓库 ZIP（注意陷阱）**：点绿色「Code → Download ZIP」得到的是仓库快照，其中 PDF 仅为 Git LFS 指针（约 130 字节），**不含真实 PDF 内容**，解压后无法直接打开。需要真实文件请走上面的单文件下载，或用下方 git 方式。
 - **Git 方式（开发者）**：`git clone <本仓库地址>` 后执行 `git lfs pull`，即可把原版扫描件等 LFS 大文件拉到本地。
